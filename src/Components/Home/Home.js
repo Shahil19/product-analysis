@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -8,6 +8,16 @@ const Home = () => {
         const URL = '/reviews';
         navigate(URL)
     }
+
+    // review data
+    const [reviews, setReviews] = useState([]);
+    useEffect(() => {
+        fetch('reviews.json')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    }, [])
+
+    console.log(reviews);
     return (
         <div>
             <div className='grid grid-cols-2 gap-5 mx-8 mt-10'>

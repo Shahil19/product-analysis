@@ -9,9 +9,9 @@ const MyChartOne = () => {
             .then(data => setSelling(data))
     }, [])
 
-    console.log(selling);
+
     return (
-        <LineChart width={700} height={400} data={selling}>
+        <LineChart width={500} height={400} data={selling}>
             <Line type="monotone" dataKey="investment" stroke="orange" />
             <Line type="monotone" dataKey="sell" stroke="red" />
             <Line type="monotone" dataKey="revenue" stroke="green" />
