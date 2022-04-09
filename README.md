@@ -2,11 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Live Site
 
-What is did today?
+[Live Project](https://github.com/facebook/create-react-app)
 
 ### What is did today?
+
+- First: Created React App
+- Second: Installed React Router
+- Third: Started Coding On VS Code
+
+## Available Scripts
 
 In the project directory, you can run:
 
