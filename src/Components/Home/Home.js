@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -10,14 +11,18 @@ const Home = () => {
     }
 
     // review data
-    const [reviews, setReviews] = useState([]);
+    /* const [reviews, setReviews] = useState([]);
     useEffect(() => {
         fetch('reviews.json')
             .then(res => res.json())
             .then(data => setReviews(data))
-    }, [])
+    }, []) */
 
+    // console.log(reviews);
+
+    const [reviews, setReviews] = useReviews();
     console.log(reviews);
+
     return (
         <div>
             <div className='grid grid-cols-2 gap-5 mx-8 mt-10'>
