@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import HomeReviews from '../HomeReviews/HomeReviews';
 
@@ -9,20 +8,6 @@ const Home = () => {
         const URL = '/reviews';
         navigate(URL)
     }
-
-    // review data
-    /* const [reviews, setReviews] = useState([]);
-    useEffect(() => {
-        fetch('reviews.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, []) */
-
-    // console.log(reviews);
-
-
-
-
 
     return (
         <div>
