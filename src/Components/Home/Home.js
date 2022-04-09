@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import useReviews from '../../hooks/useReviews';
+import HomeReviews from '../HomeReviews/HomeReviews';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -20,8 +20,9 @@ const Home = () => {
 
     // console.log(reviews);
 
-    const [reviews, setReviews] = useReviews();
-    console.log(reviews);
+
+
+
 
     return (
         <div>
@@ -34,6 +35,10 @@ const Home = () => {
                     <img src="https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132_960_720.jpg" alt="" />
                 </div>
             </div>
+            <div className='m-12'></div>
+            {
+                <HomeReviews></HomeReviews>
+            }
             <div className='mt-10 flex justify-center'>
                 <button onClick={goToReviewPage} className='mx-auto py-2 px-3 text-white bg-purple-600 rounded-md '>See All Reviews</button>
             </div>
