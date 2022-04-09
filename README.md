@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Live Site
+### Live Site
 
-[Live Project](https://github.com/facebook/create-react-app)
+[Live Project](https://assignment-9-foodify.netlify.app/)
 
 ### What is did today?
 
